@@ -10,6 +10,7 @@ const tabs = document.querySelectorAll('.operations__tab');
 const tabsContainer = document.querySelector('.operations__tab-container');
 const tabsContent = document.querySelectorAll('.operations__content');
 const nav = document.querySelector('.nav');
+const yearEl = document.querySelector('.year');
 ///////////////////////////////////////
 // Modal window
 
@@ -252,3 +253,8 @@ const slider = function () {
   });
 };
 slider();
+
+///////////////////////////////////////
+// Setting the current year
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
